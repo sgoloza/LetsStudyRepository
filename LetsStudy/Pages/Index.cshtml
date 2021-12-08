@@ -6,10 +6,21 @@
 
 <div class="text-center">
     <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <div class="input-group">
+            <input id="Search-box" type="text" placeholder="what are you looking for?" class="form-control" aria-label="Text input with dropdown button">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catagory</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Books</a>
+                    <a class="dropdown-item" href="#">Past Papers</a>
+                    <a class="dropdown-item" href="#">Tutorials</a>
+                    <a class="dropdown-item" href="#">Practical Tests</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Not Sure</a>
+                </div>
+            </div>
+        </div>
+        <br />
+        <button class="btn btn-primary btn-lg" type="submit" value="Search" >Learn more</button>
     </div>
 </div>
