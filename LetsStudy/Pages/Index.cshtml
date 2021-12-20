@@ -4,23 +4,70 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
+<div >
     <div class="jumbotron">
-        <div class="input-group">
-            <input id="Search-box" type="text" placeholder="what are you looking for?" class="form-control" aria-label="Text input with dropdown button">
-            <div class="input-group-append">
-                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catagory</button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Books</a>
-                    <a class="dropdown-item" href="#">Past Papers</a>
-                    <a class="dropdown-item" href="#">Tutorials</a>
-                    <a class="dropdown-item" href="#">Practical Tests</a>
-                    <div role="separator" class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Not Sure</a>
+        <form>
+            <div class="input-group">
+                <input id="Search-box" type="text" placeholder="what are you looking for?" required class="form-control" aria-label="Text input with dropdown button">
+                <div class="input-group-append">
+                    <div class="form-select">
+                        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                            <option selected>Category</option>
+                            <option value="Books">Books</option>
+                            <option value="Tutorials">Tutorials</option>
+                            <option value="Past Papers">Past Papers</option>
+                            <option value="Practical Tests">Practical Tests</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <br />
+        <div class="text-center">
+             <button id="Search-button" class="btn btn-primary btn-lg" type="submit" value="Search">Search</button>
+        </div>
+       
+        <br />
+        <br />
+        <div class="text-center">
+            <div id="home-div" class="rounded col-4">
+                <img id="home-img" src="../images/backgraound/back_ground.png" class="rounded" alt="...">
+                <p class="rounded">KKKKKKK KKKKKK KKKK KKKKK KKKKKKKKKKK KKKKKKKKKKKK KKKKK KKKKKKKKKKK KKKKK KKKKKKKKK</p>
+                <button class="btn btn-primary btn-lg" type="submit" value="Search">Search</button>
+            </div>
+            <div id="home-div" class="rounded  col-4">
+                <img id="home-img" src="../images/backgraound/back_ground.png" class="rounded" alt="...">
+                <p class="rounded">KKKKKKK KKKKKK KKKK KKKKK KKKKKKKKKKK KKKKKKKKKKKK KKKKK KKKKKKKKKKK KKKKK KKKKKKKKK</p>
+                <button class="btn btn-primary btn-lg" type="submit" value="Search">Search</button>
+            </div>
+            <div id="home-div" class="rounded  col-4">
+                <img id="home-img" src="../images/backgraound/back_ground.png" class="rounded" alt="...">
+                <p class="rounded">KKKKKKK KKKKKK KKKK KKKKK KKKKKKKKKKK KKKKKKKKKKKK KKKKK KKKKKKKKKKK KKKKK KKKKKKKKK</p>
+                <button class="btn btn-primary btn-lg" type="submit" value="Search">Search</button>
+            </div>
+            <div class="rounded  row">
+                <hr class="col-10" />
+                <div class="rounded  col-3">
+                    <img id="home-img" src="../images/backgraound/back_ground.png" class="rounded " alt="...">
+                    <button class="btn btn-primary btn-lg" type="submit" value="Search">Search</button>
+                </div>
+                <div class="rounded  col-3">
+                    <img id="home-img" src="../images/backgraound/back_ground.png" class="rounded " alt="...">
+                    <p class="rounded">KKKKKKK KKKKKK KKKK KKKKK KKKKKKKKKKK KKKKKKKKKKKK KKKKK KKKKKKKKKKK KKKKK KKKKKKKKK</p>
+                    <button class="btn btn-primary btn-lg" type="submit" value="Search">Search</button>
+                </div>
+                <div class="rounded  col-3">
+                    <img id="home-img" src="../images/backgraound/back_ground.png" class="rounded " alt="...">
+                    <p class="rounded">KKKKKKK KKKKKK KKKK KKKKK KKKKKKKKKKK KKKKKKKKKKKK KKKKK KKKKKKKKKKK KKKKK KKKKKKKKK</p>
+                    <button class="btn btn-primary btn-lg" type="submit" value="Search">Search</button>
+                </div>
+                <div class="rounded  col-3">
+                    <img id="home-img" src="../images/backgraound/back_ground.png" class="rounded " alt="...">
+                    <p class="rounded">KKKKKKK KKKKKK KKKK KKKKK KKKKKKKKKKK KKKKKKKKKKKK KKKKK KKKKKKKKKKK KKKKK KKKKKKKKK</p>
+                    <button class="btn btn-primary btn-lg" type="submit" value="Search">Search</button>
                 </div>
             </div>
         </div>
-        <br />
-        <button class="btn btn-primary btn-lg" type="submit" value="Search" >Learn more</button>
     </div>
 </div>
