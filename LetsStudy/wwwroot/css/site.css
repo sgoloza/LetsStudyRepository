@@ -6,12 +6,12 @@ a.navbar-brand {
   text-align: center;
   word-break: break-all;
 }
-
+#login-register {
+}
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #0366d6;
 }
-
 .btn-primary {
   color: black;
   background-color: white;
@@ -28,6 +28,7 @@ a {
 -------------------------------------------------- */
 html {
   font-size: 14px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 @media (min-width: 768px) {
   html {
@@ -65,10 +66,8 @@ body {
 }
 .footer {
   position: absolute;
-  bottom: 0;
   width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+  white-space: nowrap; /* Vertically center the text there */
 }
 #Search-box {
     width: 70px;
@@ -84,10 +83,15 @@ body {
     border: unset;
     border-radius: 0px;
 }
-.form-select {
+#inputGroupSelect04 {
     width: 120px;
     height: 50px;
-    border-color:brown;
+    border-color: black;
+}
+#inputGroupSelectZoom {
+    width: 120px;
+    height: 50px;
+    border-color: black;
 }
 #home-img {
     width: 200px;
@@ -101,9 +105,16 @@ hr {
     margin-left: 0
 }
 #homee-div {
-   float:right;
-   padding-block:10px;
+    float: right;
+    padding-block: 10px;
 }
 #footer{
     padding-bottom:2em;
+}
+#tutor_jumbotron_div{
+    background-color: white;
+    border: 0px;
+}
+.card {
+   border-color: brown;
 }
