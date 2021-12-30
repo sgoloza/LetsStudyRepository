@@ -26,15 +26,46 @@
                             <form method="post">
                                 <div class="modal-body">
                                     <input id="BookingDateMessage1" type="text" value="" hidden />
-                                    <div class="rounded row" style="margin:0 -16px 8px -4px">
-                                        <div class="rounded col-12 ">
-                                            <input class="form-control" type="email" placeholder="Your Email" required name="Email"><br />
+                                    <div class="rounded mb-3" style="margin:0 -16px 8px -4px">
+                                        <div class="input-group  col-12 ">
+                                            <input class="form-control" type="email" placeholder="Your Email" required name="Email">
+                                            <div class="input-group-append">
+                                                <div class="input-group-text">
+                                                    <span class="fa fa-envelope"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rounded mb-3" style="margin:0 -16px 8px -4px">
+                                        <div class="input-group rounded col-12 ">
                                             <input class="form-control" type="password" placeholder="password" required name="Password">
+                                            <div class="input-group-append">
+                                                <div class="input-group-text">
+                                                    <span class="fa fa-lock"></span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="rounded row" style="margin:0 -16px 8px -4px">
-                                        <div class="rounded col-12 ">
-                                            <a  href="~/images/backgraound/background.png" class="text-center">Forgot password?</a>
+                                        <div class="rounded col-6">
+                                            <a href="~/images/backgraound/background.png" class="text-center">Forgot password?</a>
+                                        </div>
+                                        <div class="rounded col-6">
+                                            <p>Or Login with</p>
+                                        </div>
+                                    </div>
+                                    <div class="rounded row" style="margin:0 -16px 8px -4px">
+                                        <div class="rounded col-3">
+                                            <span class="fa fa-google"></span>
+                                        </div>
+                                        <div class="rounded col-3">
+                                            <span class="fa fa-facebook"></span>
+                                        </div>
+                                        <div class="rounded col-3">
+                                            <span class="fa fa-linkedin"></span>
+                                        </div>
+                                        <div class="rounded col-3">
+                                            <span class="fa fa-twitter"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -60,17 +91,42 @@
                             </div>
                             <form method="post">
                                 <div class="modal-body">
-                                    <input id="BookingDateMessage1" type="text" value="" hidden />
-                                    <div class="rounded row" style="margin:0 -16px 8px -16px">
-                                        <div class="rounded col-6">
-                                            <input class="form-control" type="text" placeholder="Name" required name="Name">
-                                        </div>
-                                        <div class="rounded col-6">
-                                            <input class="form-control" type="text" placeholder="Email" required name="Email">
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label"> First name</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="inputPassword" placeholder="" required>
                                         </div>
                                     </div>
-                                    <textarea class="form-control " type="text" placeholder="Message" required name="Message"></textarea>
-                                    <br>
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label"> Last name</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="inputPassword" placeholder="" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label">Phone no.</label>
+                                        <div class="col-sm-8">
+                                            <input minlength="10"     maxlength="12"  type="number" class="form-control" id="inputPassword" placeholder="" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label">Email</label>
+                                        <div class="col-sm-8">
+                                            <input type="email" class="form-control" id="inputPassword" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
+                                        <div class="col-sm-8">
+                                            <input type="password" class="form-control" id="inputPassword" placeholder="Password"  required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label"> Confirm Password</label>
+                                        <div class="col-sm-8">
+                                            <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -129,6 +185,7 @@
 
     <footer class="border-top footer text-muted text-center">
         <div class="container text-wrap">
+            <span class="fa fa-facebook"></span>
             &copy; @DateTime.Today.Year - LetsStudy - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
